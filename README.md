@@ -1,2 +1,2 @@
 # homework
-swift勉強用リポジトリ
+swift勉強用
