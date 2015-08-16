@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var inputText: UITextView!
 
+    @IBAction func textDebug(sender: AnyObject) {
+        inputText.resignFirstResponder()
+        println(inputText.text)
+    }
 }
 
