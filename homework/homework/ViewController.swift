@@ -55,5 +55,32 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         var dateStr = df.stringFromDate(sender.date)
         println(dateStr)
     }
+
+    @IBAction func tapBtn(sender: AnyObject) {
+        var alertController = UIAlertController(
+            title: "タイトル",
+            message: "メッセージ",
+            preferredStyle: .Alert)
+        
+        alertController.addAction(UIAlertAction(
+            title: "OK",
+            style: .Default,
+            handler: {action in self.myOK() }))
+        
+        alertController.addAction(UIAlertAction(
+            title: "Cancel",
+            style: .Cancel,
+            handler: {action in self.myCancel() }))
+        
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    func myOK(){
+        println("OK")
+    }
+    
+    func myCancel(){
+        println("キャンセル")
+    }
 }
 
