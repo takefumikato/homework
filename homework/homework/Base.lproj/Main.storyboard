@@ -23,6 +23,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="t7h-ab-WjL">
+                                <rect key="frame" x="0.0" y="191" width="414" height="80"/>
+                                <date key="date" timeIntervalSinceReferenceDate="461381039.22093803">
+                                    <!--2015-08-16 01:23:59 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="O8e-Zv-Lhd"/>
+                                </connections>
+                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaJ-1S-7Zt">
                                 <rect key="frame" x="132" y="153" width="150" height="30"/>
                                 <state key="normal" title="デバッグエリアに表示">

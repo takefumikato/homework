@@ -26,5 +26,11 @@ class ViewController: UIViewController {
         inputText.resignFirstResponder()
         println(inputText.text)
     }
+    @IBAction func datePicker(sender:UIDatePicker){
+        let df = NSDateFormatter()
+        df.dateFormat = "yyyy/ MM/dd HH:mm:ss"
+        var dateStr = df.stringFromDate(sender.date)
+        println(dateStr)
+    }
 }
 
